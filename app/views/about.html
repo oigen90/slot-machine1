@@ -1,0 +1,24 @@
+<div class="content container" style="text-align: center">
+                
+    <h1>Slots Tournament</h1>
+        
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 machineContainer">
+
+            <slot-machine id="machine1" is-running="isRunning()" class="slotMachine" active="0", delay="500" slots-number="6"></slot-machine>
+            <slot-machine id="machine2" is-running="isRunning()" class="slotMachine" active="0", delay="500" slots-number="6"></slot-machine>
+            <slot-machine id="machine3" is-running="isRunning()" class="slotMachine" active="0", delay="500" slots-number="6"></slot-machine>
+
+            <!-- <div id="machine1Result" class="col-xs-4 machineResult">Index: 0</div>
+            <div id="machine2Result" class="col-xs-4 machineResult">Index: 0</div>
+            <div id="machine3Result" class="col-xs-4 machineResult">Index: 0</div> -->
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div id="slotMachineButton1" class="slotMachineButton" ng-click="runMachines()">GO!</div>
+    </div>
+
+    <h2>{{isRunning()}}</h2>
+
+</div>
